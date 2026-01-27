@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: "Project Placeholder",
     description: "A short description of the problem, your approach, and the outcome.",
     tags: ["Next.js", "Tailwind", "TypeScript"],
-    image: "/images/projects/placeholder-1.jpg",
+    image: "/images/projects/placeholder-1.png",
     links: { demo: "#", repo: "#" },
   },
 ];
