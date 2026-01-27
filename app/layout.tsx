@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     template: "%s | Paolo Jiménez",
   },
   description: "Software Engineer portfolio: projects, experience, and contact.",
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://portfolio-beta-weld-27.vercel.app/"),
   openGraph: {
     title: "Paolo Jiménez | Portfolio",
     description:
       "Software Engineer portfolio: projects, experience, and contact.",
-    url: "https://example.com",
+    url: "https://portfolio-beta-weld-27.vercel.app/",
     siteName: "Paolo Jiménez",
     locale: "en_US",
     type: "website",
