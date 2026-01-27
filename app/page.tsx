@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/data/site";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -9,6 +10,34 @@ export default function HomePage() {
           <span className="h-2 w-2 rounded-full bg-emerald-500" />
           {site.availability}
         </div>
+        <div className="flex items-center gap-4">
+        <div className="relative h-14 w-14 overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800">
+          <Image
+            src="/images/avatar.jpg"
+            alt="Paolo Jiménez"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+
+        <div className="text-sm text-neutral-600 dark:text-neutral-300">
+          <div className="font-medium text-neutral-900 dark:text-white">{site.role}</div>
+          <div>{site.location}</div>
+        </div>
+      </div>
+      
+      <div className="relative mt-8 h-56 overflow-hidden rounded-3xl border border-neutral-200 dark:border-neutral-800 sm:h-72">
+        <Image
+          src="/images/banner.jpeg"
+          alt="Workspace"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+      </div>
+
+
 
         <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl">
           {site.name}

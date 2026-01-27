@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { projects } from "@/data/projects";
+import Image from "next/image";
 
 export default function ProjectsPage() {
   return (
@@ -18,6 +19,12 @@ export default function ProjectsPage() {
             key={p.slug}
             className="rounded-2xl border border-neutral-200 p-5 transition hover:-translate-y-0.5 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900"
           >
+            {p.image && (
+            <div className="relative mb-4 h-40 overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800">
+                <Image src={p.image} alt={p.title} fill className="object-cover" />
+            </div>
+            )}
+
             <div className="flex items-start justify-between gap-4">
               <h2 className="text-lg font-semibold">{p.title}</h2>
               <span className="text-xs text-neutral-500">Preview</span>
