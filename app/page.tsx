@@ -35,6 +35,7 @@ export default function HomePage() {
 
           <a
             href={site.links.resume}
+            download="Paolo_Jimenez_Resume.pdf"
             className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900"
           >
             Download resume
