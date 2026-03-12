@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 import { Inter } from "next/font/google";
 
@@ -40,9 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} min-h-screen bg-white text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-50`}>
         <ThemeProvider>
-          <Navbar />
-          <main className="mx-auto max-w-5xl px-4 py-12">{children}</main>
-          <Footer />
+          {children}
         </ThemeProvider>
       </body>
     </html>
