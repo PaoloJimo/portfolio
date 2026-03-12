@@ -9,11 +9,17 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "coming-soon-1",
-    title: "Project Placeholder",
-    description: "A short description of the problem, your approach, and the outcome.",
-    tags: ["Next.js", "Tailwind", "TypeScript"],
-    image: "/images/projects/placeholder-1.png",
+    slug: "gymtrack",
+    title: "GymTrack",
+    description: "A workout tracking app that lets you log exercises, track personal records, and visualize your progress over time.",
+    tags: ["React Native", "TypeScript", "Firebase"],
+    links: { demo: "#", repo: "#" },
+  },
+  {
+    slug: "autotune",
+    title: "Autotune",
+    description: "A web-based audio tool for pitch correction and vocal tuning, built with the Web Audio API for real-time processing.",
+    tags: ["JavaScript", "Web Audio API", "React"],
     links: { demo: "#", repo: "#" },
   },
 ];
