@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { peopleList } from "@/data/people";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -10,10 +11,14 @@ export default function LandingPage() {
       </div>
 
       <div className="flex flex-1 flex-col items-center justify-center gap-10 px-4 text-center">
-        <div className="space-y-3">
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-            Portfolio
-          </h1>
+        <div className="flex flex-col items-center gap-4">
+          <Image
+            src="/images/jimo-logo.png"
+            alt="JIMO"
+            width={180}
+            height={180}
+            priority
+          />
           <p className="text-neutral-600 dark:text-neutral-300">
             Select a portfolio to view
           </p>
